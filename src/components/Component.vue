@@ -7,9 +7,9 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'Component',
-});
+})
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 // .Component {}
 </style>

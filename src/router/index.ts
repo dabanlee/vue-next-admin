@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import Layout from '@/layout/index.vue'
 
 const context = require.context('./modules', true, /\.ts$/)
 
@@ -18,6 +19,14 @@ const constantRoutes: Array<RouteRecordRaw> = [
 const routes: Array<RouteRecordRaw> = [
   ...constantRoutes,
   ...modulesRoutes,
+  {
+    path: '/',
+    name: 'Layout',
+    component: Layout,
+    children: [
+      ...modulesRoutes,
+    ],
+  },
 ]
 
 const router = createRouter({

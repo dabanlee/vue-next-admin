@@ -18,7 +18,13 @@
     "paths": {
       "@/*": [
         "src/*"
-      ]
+      ],
+      "@types/*": [
+        "types/*"
+      ],
+      "@types": [
+        "types/index.d.ts"
+      ],
     },
     "lib": [
       "esnext",
@@ -31,6 +37,7 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
+    "types/**/*.ts",
     "tests/**/*.ts",
     "tests/**/*.tsx"
   ],

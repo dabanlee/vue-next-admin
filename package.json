@@ -2,6 +2,7 @@
   "name": "vue-next-admin",
   "version": "0.1.0",
   "description": "vue next admin",
+  "types": "types",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
